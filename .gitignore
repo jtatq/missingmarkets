@@ -1,0 +1,10 @@
+# The raw CommandCenter export carries a rep email address on nearly every
+# row (2,911 of 2,916 in the 11/05 file). It is the input to the audit, not a
+# product of it, and it does not belong in git. Drop your own export into
+# data/ and pass its path to build_coverage.py.
+data/*.csv
+
+# Census API key. Same rule as market-finder: environment only.
+.census_key
+*.pyc
+__pycache__/
